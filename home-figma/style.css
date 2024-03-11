@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
 }
 
 nav .bag-number {
@@ -99,5 +98,49 @@ nav .nav-item a {
   .footer-section .copyright-icons p {
     color: #929292;
     font-size: 1.25rem;
+  }
+}
+.call-price-section > div {
+  margin: 1rem 2rem;
+}
+.call-price-section > div .church-woman-images img:first-child {
+  height: 30rem;
+}
+.call-price-section > div .church-woman-images img:last-child {
+  height: 28rem;
+}
+.call-price-section > div .call-price-button-section-people img {
+  margin-left: -1.5rem;
+}
+.call-price-section > div .call-price-joinus-section {
+  background-color: pink;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.call-price-section > div .call-price-joinus-button {
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.call-price-section > div .building-bridges-of-faith {
+  border-left: 0.1rem solid grey;
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+@media (min-width: 992px) {
+  .call-price-section > div {
+    margin: 1rem 15rem;
+  }
+  .call-price-section > div .church-woman-images img:first-child {
+    height: 30rem;
+  }
+  .call-price-section > div .church-woman-images img:last-child {
+    height: 28rem;
+  }
+  .call-price-section > div .call-price-joinus-section {
+    padding: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

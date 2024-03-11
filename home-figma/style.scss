@@ -3,7 +3,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto";
 }
 @import "../navbar/navbar.scss";
 @import "../footer/footer.scss";
+
+//call price section
+.call-price-section {
+    >div {
+        margin: 1rem 2rem;
+        .church-woman-images img:first-child {
+            height: 30rem;
+        }
+        .church-woman-images img:last-child {
+            height: 28rem;
+        }
+        .call-price-button-section-people {
+            img {
+                margin-left: -1.5rem;
+            }
+        }
+        .call-price-joinus-section {
+            background-color: pink;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+        .call-price-joinus-button {
+            border: none;
+            color: white;
+            background-color: black;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.5rem;
+        }
+        .building-bridges-of-faith {
+            border-left: 0.1rem solid grey;
+            padding-left: 1rem;
+            margin-left: 1rem;
+        }
+
+    }
+}
+
+@media (min-width: 992px) {
+    .call-price-section {
+        >div {
+            margin: 1rem 15rem;
+            .church-woman-images img:first-child {
+                height: 30rem;
+            }
+            .church-woman-images img:last-child {
+                height: 28rem;
+            }
+            .call-price-joinus-section {
+                padding: 2rem;
+            }
+        }
+    }
+}
