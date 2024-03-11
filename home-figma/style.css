@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+nav .bag-number {
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: #C0304F;
+  border-radius: 50%;
+  top: -0.625rem;
+  right: -1.25rem;
+}
+nav .navlogo-for-large {
+  left: 38%;
+  top: 12%;
+}
+nav .nav-hover-lines {
+  display: none;
+  height: 0.15rem;
+  border-radius: 0.2rem;
+  background-color: #C0304F;
+  bottom: 0.2rem;
+}
+nav .hover-long-line {
+  width: 63%;
+  left: 10%;
+}
+nav .hover-short-line {
+  width: 15%;
+  left: 80%;
+}
+nav .nav-item {
+  transition: all 0.8s ease-out;
+}
+nav .nav-item a {
+  color: black;
+}
+@media (min-width: 992px) {
+  nav .nav-item:hover .nav-hover-lines {
+    display: inline-block;
+  }
+}
+
+.footer-section {
+  background: url("../images/footer-images/footer.png");
+  background-size: cover;
+}
+.footer-section hr {
+  color: #929292;
+}
+.footer-section .footer-logo-text > p {
+  color: #929292;
+  font-size: 0.9rem;
+}
+.footer-section .footer-links-form .footer-field {
+  font-size: 0.9rem;
+}
+.footer-section .footer-links-form a {
+  color: #929292;
+  font-size: 0.68rem;
+}
+.footer-section .footer-links-form .footer-form > p:nth-child(2) {
+  font-size: 0.9rem;
+  color: #929292;
+}
+.footer-section .footer-links-form .footer-form input {
+  border-radius: 0.5rem;
+  color: #929292;
+  background-color: #2F3032;
+  outline: none;
+}
+.footer-section .footer-links-form .footer-form button {
+  border-radius: 0.5rem;
+  background-color: #C0304F;
+}
+.footer-section .copyright-icons p {
+  color: #929292;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 465px) {
+  .footer-section .footer-logo-text > p {
+    font-size: 1.25rem;
+  }
+  .footer-section .footer-links-form .footer-field {
+    font-size: 1.25rem;
+  }
+  .footer-section .footer-links-form a {
+    font-size: 1.2rem;
+  }
+  .footer-section .footer-links-form .footer-form > p:nth-child(2) {
+    color: #929292;
+    font-size: 1.25rem;
+  }
+  .footer-section .copyright-icons p {
+    color: #929292;
+    font-size: 1.25rem;
+  }
+}/*# sourceMappingURL=style.css.map */
