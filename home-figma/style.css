@@ -103,11 +103,17 @@ nav .nav-item a {
 .call-price-section > div {
   margin: 1rem 2rem;
 }
-.call-price-section > div .church-woman-images img:first-child {
+.call-price-section > div .church-woman-images > div:first-child {
   height: 30rem;
 }
-.call-price-section > div .church-woman-images img:last-child {
+.call-price-section > div .church-woman-images > div:first-child > img {
+  height: 100%;
+}
+.call-price-section > div .church-woman-images > div:last-child {
   height: 28rem;
+}
+.call-price-section > div .church-woman-images > div:last-child > img {
+  height: 100%;
 }
 .call-price-section > div .call-price-button-section-people img {
   margin-left: -1.5rem;
@@ -117,30 +123,139 @@ nav .nav-item a {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
+.call-price-section > div .call-price-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
 .call-price-section > div .call-price-joinus-button {
-  border: none;
   color: white;
   background-color: black;
+  font-size: 1.1rem;
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
+  border: none;
 }
 .call-price-section > div .building-bridges-of-faith {
   border-left: 0.1rem solid grey;
   padding-left: 1rem;
-  margin-left: 1rem;
 }
 
 @media (min-width: 992px) {
   .call-price-section > div {
-    margin: 1rem 15rem;
+    margin: 1rem 3rem;
   }
-  .call-price-section > div .church-woman-images img:first-child {
+  .call-price-section > div .church-woman-images > div:first-child {
     height: 30rem;
   }
-  .call-price-section > div .church-woman-images img:last-child {
+  .call-price-section > div .church-woman-images > div:last-child {
     height: 28rem;
   }
   .call-price-section > div .call-price-joinus-section {
     padding: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .call-price-section > div {
+    margin: 1rem 15rem;
+  }
+  .call-price-section .side-grey-image {
+    mix-blend-mode: darken;
+    bottom: 3rem;
+    left: 0;
+    height: 28rem;
+  }
+}
+.faithful-hearts-section > div {
+  margin: 1rem 2rem;
+}
+.faithful-hearts-section > div .faithful-hearts-image > img {
+  width: min(30rem, 100%);
+}
+.faithful-hearts-section > div .double-qoute {
+  color: #C0304F;
+}
+.faithful-hearts-section > div .faithful-hearts-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+
+@media (min-width: 992px) {
+  .faithful-hearts-section > div {
+    margin: 1rem 3rem;
+  }
+  .faithful-hearts-section > div .faithful-hearts-image > img {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .faithful-hearts-section > div {
+    margin: 1rem 15rem;
+  }
+  .faithful-hearts-section .faithful-hearts-bird-image {
+    right: 0;
+    top: 0;
+    width: 20rem;
+  }
+}
+.unleash-potential-section > div {
+  margin: 1rem 2rem;
+}
+.unleash-potential-section > div .unleash-potential-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+.unleash-potential-section > div .unleash-readmore-button {
+  color: white;
+  background-color: black;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.unleash-potential-section > div .unleash-readmore-button {
+  max-width: 10rem;
+}
+
+@media (min-width: 992px) {
+  .unleash-potential-section > div {
+    margin: 1rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .unleash-potential-section > div {
+    margin: 1rem 15rem;
+  }
+}
+.satisfaction-section > div {
+  margin: 1rem 2rem;
+}
+.satisfaction-section > div .satisfaction-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+.satisfaction-section > div .satisfaction-heading {
+  margin-left: 1rem;
+}
+
+@media (min-width: 992px) {
+  .satisfaction-section > div {
+    margin: 1rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .satisfaction-section > div {
+    margin: 1rem 15rem;
   }
 }/*# sourceMappingURL=style.css.map */
