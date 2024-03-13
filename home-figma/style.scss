@@ -26,6 +26,27 @@ $red-color: #C0304F;
         padding-left: 0.8rem;
     }
 }
+// Hero section
+
+.heroSection {
+    background-color: #f6f2eb;
+  }
+  
+  .heroSmallImage {
+    border-radius: 50% 50% 0 0;
+  }
+  
+  .heroCrownLady {
+    border-radius: 50% 50% 0 0;
+  }
+  .heroCrownLady img {
+    transform: translateX(20%);
+  }
+  
+  .donateImage {
+    margin-top: -2rem !important;
+  }
+
 //call price section
 .call-price-section {
     >div {
@@ -226,17 +247,112 @@ $red-color: #C0304F;
         @include button-style("growing-learn-more-button", white, black, 1.1rem);
     }
 }
+@media (min-width: 576px) {
+    .growing-stronger-hand-image {
+        margin-top: 16rem;
+    }
+}
 @media (min-width: 992px) {
     .growing-stronger-section {
         >div {
             margin: 1rem 3rem;
         }
     }
+    .growing-stronger-hand-image {
+        margin-top: 18rem;
+    }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .growing-stronger-section {
         >div {
             margin: 1rem 15rem;
+        }
+    }
+    .growing-stronger-hand-image {
+        margin-top: 20  rem;
+    }
+    .growing-section-absolute-image {
+        left: 0;
+        bottom: 1rem;
+        width: 13rem;
+    }
+}
+
+
+// Your members section
+.your-members-section {
+    margin-top: 5rem;
+    >div {
+        margin: 1rem 2rem;
+        @include heading-style("your-members-heading", black, 1.6rem, 800);
+        .vertical-line {
+            height: 3.5rem;
+            width: 0.1rem;
+            background-color: grey;
+        }
+        .your-member-share-icon-container {
+            height: 3rem;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid grey;
+            >img {
+                height: 1.6rem;
+                cursor: pointer;
+            }
+        }
+        .your-members-social-icons {
+            visibility: hidden;
+        }
+        .your-members-cards>div>div{
+            transition: all 0.8s ease;
+            &:hover {
+                .your-member-share-icon-container{
+                    background-color: $red-color;
+                    border: none;
+                }
+                .your-members-social-icons{
+                    visibility: visible;
+                }
+            }
+        }
+        .your-members-all-teams-members {
+            hr {
+                color: grey;
+                width: calc(50% - 115px);
+            }
+            @include button-style("all-team-members-button", white, black, 1.1rem);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .your-members-section {
+        >div {
+            margin: 1rem 3rem;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .your-members-section {
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        >div {
+            margin: 1rem 15rem;
+        }
+        .absolute-crown-image {
+            top: -12rem;
+            width: 33rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .absolute-flower-image {
+            bottom: -14rem;
+            width: 33rem;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }

@@ -100,6 +100,26 @@ nav .nav-item a {
     font-size: 1.25rem;
   }
 }
+.heroSection {
+  background-color: #f6f2eb;
+}
+
+.heroSmallImage {
+  border-radius: 50% 50% 0 0;
+}
+
+.heroCrownLady {
+  border-radius: 50% 50% 0 0;
+}
+
+.heroCrownLady img {
+  transform: translateX(20%);
+}
+
+.donateImage {
+  margin-top: -2rem !important;
+}
+
 .call-price-section > div {
   margin: 1rem 2rem;
 }
@@ -308,13 +328,112 @@ nav .nav-item a {
   border: none;
 }
 
-@media (min-width: 992px) {
-  .growing-stronger-section > div {
-    margin: 1rem 3rem;
+@media (min-width: 576px) {
+  .growing-stronger-hand-image {
+    margin-top: 16rem;
   }
 }
 @media (min-width: 992px) {
   .growing-stronger-section > div {
+    margin: 1rem 3rem;
+  }
+  .growing-stronger-hand-image {
+    margin-top: 18rem;
+  }
+}
+@media (min-width: 1200px) {
+  .growing-stronger-section > div {
     margin: 1rem 15rem;
+  }
+  .growing-stronger-hand-image {
+    margin-top: 20 rem;
+  }
+  .growing-section-absolute-image {
+    left: 0;
+    bottom: 1rem;
+    width: 13rem;
+  }
+}
+.your-members-section {
+  margin-top: 5rem;
+}
+.your-members-section > div {
+  margin: 1rem 2rem;
+}
+.your-members-section > div .your-members-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+.your-members-section > div .vertical-line {
+  height: 3.5rem;
+  width: 0.1rem;
+  background-color: grey;
+}
+.your-members-section > div .your-member-share-icon-container {
+  height: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+.your-members-section > div .your-member-share-icon-container > img {
+  height: 1.6rem;
+  cursor: pointer;
+}
+.your-members-section > div .your-members-social-icons {
+  visibility: hidden;
+}
+.your-members-section > div .your-members-cards > div > div {
+  transition: all 0.8s ease;
+}
+.your-members-section > div .your-members-cards > div > div:hover .your-member-share-icon-container {
+  background-color: #C0304F;
+  border: none;
+}
+.your-members-section > div .your-members-cards > div > div:hover .your-members-social-icons {
+  visibility: visible;
+}
+.your-members-section > div .your-members-all-teams-members hr {
+  color: grey;
+  width: calc(50% - 115px);
+}
+.your-members-section > div .your-members-all-teams-members .all-team-members-button {
+  color: white;
+  background-color: black;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .your-members-section > div {
+    margin: 1rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .your-members-section {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+  .your-members-section > div {
+    margin: 1rem 15rem;
+  }
+  .your-members-section .absolute-crown-image {
+    top: -12rem;
+    width: 33rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .your-members-section .absolute-flower-image {
+    bottom: -14rem;
+    width: 33rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }/*# sourceMappingURL=style.css.map */
