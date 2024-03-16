@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  background-color: #f6f2eb;
+}
+
+.hero-small-image {
+  border-radius: 50% 50% 0 0;
+}
+
+.hero-crown-lady {
+  border-radius: 50% 50% 0 0;
+}
+.hero-crown-lady img {
+  transform: translateX(20%);
+}
+
+.donate-image {
+  margin-top: -2rem !important;
+}
+
+.call-price-section > div {
+  margin: 1rem 2rem;
+}
+.call-price-section > div .church-woman-images > div:first-child {
+  height: 30rem;
+}
+.call-price-section > div .church-woman-images > div:first-child > img {
+  height: 100%;
+}
+.call-price-section > div .church-woman-images > div:last-child {
+  height: 28rem;
+}
+.call-price-section > div .church-woman-images > div:last-child > img {
+  height: 100%;
+}
+.call-price-section > div .call-price-button-section-people img {
+  margin-left: -1.5rem;
+}
+.call-price-section > div .call-price-joinus-section {
+  background-color: pink;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.call-price-section > div .call-price-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+.call-price-section > div .call-price-joinus-button {
+  color: white;
+  background-color: black;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.call-price-section > div .building-bridges-of-faith {
+  border-left: 0.1rem solid grey;
+  padding-left: 1rem;
+}
+
+@media (min-width: 992px) {
+  .call-price-section > div {
+    margin: 1rem 3rem;
+  }
+  .call-price-section > div .church-woman-images > div:first-child {
+    height: 30rem;
+  }
+  .call-price-section > div .church-woman-images > div:last-child {
+    height: 28rem;
+  }
+  .call-price-section > div .call-price-joinus-section {
+    padding: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .call-price-section > div {
+    margin: 1rem 15rem;
+  }
+  .call-price-section .side-grey-image {
+    mix-blend-mode: darken;
+    bottom: 3rem;
+    left: 0;
+    height: 28rem;
+  }
+}
+.faithful-hearts-section > div {
+  margin: 1rem 2rem;
+}
+.faithful-hearts-section > div .faithful-hearts-image > img {
+  width: min(30rem, 100%);
+}
+.faithful-hearts-section > div .double-qoute {
+  color: #C0304F;
+}
+.faithful-hearts-section > div .faithful-hearts-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+
+@media (min-width: 992px) {
+  .faithful-hearts-section > div {
+    margin: 1rem 3rem;
+  }
+  .faithful-hearts-section > div .faithful-hearts-image > img {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .faithful-hearts-section > div {
+    margin: 1rem 15rem;
+  }
+  .faithful-hearts-section .faithful-hearts-bird-image {
+    right: 0;
+    top: 0;
+    width: 20rem;
+  }
+}
+.unleash-potential-section > div {
+  margin: 1rem 2rem;
+}
+.unleash-potential-section > div .unleash-potential-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+.unleash-potential-section > div .unleash-readmore-button {
+  color: white;
+  background-color: black;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.unleash-potential-section > div .unleash-readmore-button {
+  max-width: 10rem;
+}
+
+@media (min-width: 992px) {
+  .unleash-potential-section > div {
+    margin: 1rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .unleash-potential-section > div {
+    margin: 1rem 15rem;
+  }
+}
+.satisfaction-section > div {
+  margin: 1rem 2rem;
+}
+.satisfaction-section > div .satisfaction-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+.satisfaction-section > div .satisfaction-heading {
+  margin-left: 1rem;
+}
+.satisfaction-section > div .satisfaction-cards > div > div .description {
+  display: none;
+}
+.satisfaction-section > div .satisfaction-cards > div > div .read-more-icon {
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.satisfaction-section > div .satisfaction-cards > div > div:hover {
+  background-color: pink;
+  border-radius: 1.2rem 1.2rem 1.2rem 0;
+}
+.satisfaction-section > div .satisfaction-cards > div > div:hover .description {
+  display: block;
+}
+.satisfaction-section > div .satisfaction-cards > div > div:hover .read-more-icon {
+  background-color: #C0304F;
+  color: white;
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .satisfaction-section > div {
+    margin: 1rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .satisfaction-section > div {
+    margin: 1rem 15rem;
+  }
+  .satisfaction-section .satisfaction-absolute-leaf {
+    right: 0;
+    top: 30%;
+    width: 15rem;
+  }
+}
+.growing-stronger-section > div {
+  margin: 1rem 2rem;
+}
+.growing-stronger-section > div .growing-stronger-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+.growing-stronger-section > div .growing-learn-more-button {
+  color: white;
+  background-color: black;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+@media (min-width: 576px) {
+  .growing-stronger-hand-image {
+    margin-top: 16rem;
+  }
+}
+@media (min-width: 992px) {
+  .growing-stronger-section > div {
+    margin: 1rem 3rem;
+  }
+  .growing-stronger-hand-image {
+    margin-top: 18rem;
+  }
+}
+@media (min-width: 1200px) {
+  .growing-stronger-section > div {
+    margin: 1rem 15rem;
+  }
+  .growing-stronger-hand-image {
+    margin-top: 20 rem;
+  }
+  .growing-section-absolute-image {
+    left: 0;
+    bottom: 1rem;
+    width: 13rem;
+  }
+}
+.your-members-section {
+  margin-top: 5rem;
+}
+.your-members-section > div {
+  margin: 1rem 2rem;
+}
+.your-members-section > div .your-members-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+.your-members-section > div .vertical-line {
+  height: 3.5rem;
+  width: 0.1rem;
+  background-color: grey;
+}
+.your-members-section > div .your-member-share-icon-container {
+  height: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+.your-members-section > div .your-member-share-icon-container > img {
+  height: 1.6rem;
+  cursor: pointer;
+}
+.your-members-section > div .your-members-social-icons {
+  visibility: hidden;
+}
+.your-members-section > div .your-members-cards > div > div {
+  transition: all 0.8s ease;
+}
+.your-members-section > div .your-members-cards > div > div:hover .your-member-share-icon-container {
+  background-color: #C0304F;
+  border: none;
+}
+.your-members-section > div .your-members-cards > div > div:hover .your-members-social-icons {
+  visibility: visible;
+}
+.your-members-section > div .your-members-all-teams-members hr {
+  color: grey;
+  width: calc(50% - 115px);
+}
+.your-members-section > div .your-members-all-teams-members .all-team-members-button {
+  color: white;
+  background-color: black;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .your-members-section > div {
+    margin: 1rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .your-members-section {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+  .your-members-section > div {
+    margin: 1rem 15rem;
+  }
+  .your-members-section .absolute-crown-image {
+    top: -12rem;
+    width: 33rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .your-members-section .absolute-flower-image {
+    bottom: -14rem;
+    width: 33rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.all-events-section > div .all-events-heading-content {
+  margin: 1rem 2rem;
+}
+.all-events-section > div .all-events-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+.all-events-section > div .all-events-left-right-buttons div {
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid grey;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.all-events-section > div .all-events-left-right-buttons div:hover {
+  border: none;
+  background-color: #C0304F;
+  color: white;
+}
+.all-events-section > div .all-events-cards {
+  margin-left: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.all-events-section > div .all-events-cards .event-card {
+  border: 1px solid grey;
+  border-radius: 0.7rem 0 0.7rem 0.7rem;
+  width: 16rem;
+}
+.all-events-section > div .all-events-cards::-webkit-scrollbar {
+  display: none;
+}
+.all-events-section > div .all-events-cards .all-events-join-now-button {
+  color: white;
+  background-color: black;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.all-events-section > div .all-events-cards .all-events-join-now-button {
+  max-width: 10rem;
+}
+
+@media (min-width: 576px) {
+  .all-events-section > div .all-events-cards {
+    margin-left: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+  .all-events-section > div .all-events-cards .event-card {
+    width: unset;
+    padding-right: 6rem;
+    height: 18rem;
+    border-radius: 0.7rem;
+  }
+}
+@media (min-width: 992px) {
+  .all-events-section > div .all-events-heading-content {
+    margin: 1rem 3rem;
+  }
+  .all-events-section > div .all-events-cards {
+    margin-left: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .all-events-section > div .all-events-heading-content {
+    margin: 1rem 15rem;
+  }
+  .all-events-section > div .all-events-cards {
+    margin-left: 15rem;
+  }
+}
+.articles-section > div {
+  margin: 1rem 2rem;
+}
+.articles-section > div .articles-cards .article-card {
+  width: 16rem;
+}
+.articles-section > div .articles-cards::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .articles-section > div {
+    margin: 1rem 3rem;
+  }
+  .articles-section > div .articles-cards .article-card {
+    width: 19rem;
+  }
+}
+@media (min-width: 1200px) {
+  .articles-section > div {
+    margin: 1rem 15rem;
+  }
+}/*# sourceMappingURL=homeStyle.css.map */

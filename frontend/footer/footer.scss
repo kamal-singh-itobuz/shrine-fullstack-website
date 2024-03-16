@@ -1,0 +1,91 @@
+$ministry-bg-color: #FFE6E0;
+$main-heading-sm-fs: 2rem;
+$main-heading-lg-fs: 3rem;
+$content-text-sm-fs: 0.9rem;
+$content-text-lg-fs: 1.25rem;
+$border-button-color: #C0304F;
+$content-text-color: #747A82;
+$footer-content-color: #929292;
+
+.footer-section {
+    background: url("./footerImages/footer.png");
+    background-size: cover;
+
+    hr {
+        color: $footer-content-color;
+    }
+
+    .footer-logo-text>p {
+        color: $footer-content-color;
+        font-size: $content-text-sm-fs;
+    }
+
+    .footer-links-form {
+        .footer-field {
+            font-size: $content-text-sm-fs;
+        }
+
+        a {
+            color: $footer-content-color;
+            font-size: 0.68rem;
+        }
+
+        .footer-form {
+            >p:nth-child(2) {
+                font-size: $content-text-sm-fs;
+                color: $footer-content-color;
+            }
+
+            input {
+                border-radius: 0.5rem;
+                color: $footer-content-color;
+                background-color: #2F3032;
+                outline: none;
+            }
+
+            button {
+                border-radius: 0.5rem;
+                background-color: $border-button-color;
+            }
+        }
+    }
+
+    .copyright-icons {
+        p {
+            color: $footer-content-color;
+            font-size: $content-text-sm-fs;
+        }
+    }
+}
+
+@media (min-width: 465px) {
+    .footer-section {
+        .footer-logo-text>p {
+            font-size: $content-text-lg-fs;
+        }
+
+        .footer-links-form {
+            .footer-field {
+                font-size: $content-text-lg-fs;
+            }
+
+            a {
+                font-size: 1.2rem;
+            }
+
+            .footer-form {
+                >p:nth-child(2) {
+                    color: $footer-content-color;
+                    font-size: $content-text-lg-fs;
+                }
+            }
+        }
+
+        .copyright-icons {
+            p {
+                color: $footer-content-color;
+                font-size: $content-text-lg-fs;
+            }
+        }
+    }
+}
