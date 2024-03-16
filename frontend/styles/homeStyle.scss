@@ -535,6 +535,14 @@ $red-color: #C0304F;
                 border-radius: 0.6rem;
             }
         }
+
+        .article-next-buttons-container {
+            >div {
+                height: 1.8rem;
+                width: 1.8rem;
+                border: 1px solid grey;
+            }
+        }
     }
 }
 @media (min-width: 576px) {
