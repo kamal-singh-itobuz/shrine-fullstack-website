@@ -28,8 +28,29 @@ $red-color: #C0304F;
     }
 }
 
-// Hero section
+.all-pages-margin {
+    >div {
+        margin: 1rem 2rem;
+    }
+}
 
+@media (min-width: 992px) {
+    .all-pages-margin {
+        >div {
+            margin: 1rem 3rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .all-pages-margin {
+        >div {
+            margin: 1rem 15rem;
+        }
+    }
+}
+
+// Hero section
 .hero-section {
     background-color: #f6f2eb;
 }
@@ -52,73 +73,61 @@ $red-color: #C0304F;
 
 //call price section
 .call-price-section {
-    >div {
-        margin: 1rem 2rem;
+    .church-woman-images>div:first-child {
+        height: 30rem;
 
-        .church-woman-images>div:first-child {
-            height: 30rem;
-
-            >img {
-                height: 100%;
-            }
+        >img {
+            height: 100%;
         }
+    }
 
-        .church-woman-images>div:last-child {
-            height: 28rem;
+    .church-woman-images>div:last-child {
+        height: 28rem;
 
-            >img {
-                height: 100%;
-            }
+        >img {
+            height: 100%;
         }
+    }
 
-        .call-price-button-section-people {
-            img {
-                margin-left: -1.5rem;
-            }
+    .call-price-button-section-people {
+        img {
+            margin-left: -1.5rem;
         }
+    }
 
-        .call-price-joinus-section {
-            background-color: pink;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-        }
+    .call-price-joinus-section {
+        background-color: pink;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
 
-        @include heading-style("call-price-heading", black, 1.6rem, 800);
-        @include button-style("call-price-joinus-button", white, black, 1.1rem);
+    @include heading-style("call-price-heading", black, 1.6rem, 800);
+    @include button-style("call-price-joinus-button", white, black, 1.1rem);
 
-        .building-bridges-of-faith {
-            border-left: 0.1rem solid grey;
-            padding-left: 1rem;
-        }
+    .building-bridges-of-faith {
+        border-left: 0.1rem solid grey;
+        padding-left: 1rem;
     }
 }
 
 @media (min-width: 992px) {
     .call-price-section {
-        >div {
-            margin: 1rem 3rem;
+        .church-woman-images>div:first-child {
+            height: 30rem;
+        }
 
-            .church-woman-images>div:first-child {
-                height: 30rem;
-            }
+        .church-woman-images>div:last-child {
+            height: 28rem;
+        }
 
-            .church-woman-images>div:last-child {
-                height: 28rem;
-            }
-
-            .call-price-joinus-section {
-                padding: 2rem;
-            }
+        .call-price-joinus-section {
+            padding: 2rem;
         }
     }
 }
 
 @media (min-width: 1200px) {
     .call-price-section {
-        >div {
-            margin: 1rem 15rem;
-        }
-
         .side-grey-image {
             mix-blend-mode: darken;
             bottom: 3rem;
@@ -130,32 +139,24 @@ $red-color: #C0304F;
 
 //faithful hearts section
 .faithful-hearts-section {
-    >div {
-        margin: 1rem 2rem;
-
-        .faithful-hearts-image {
-            >img {
-                width: min(30rem, 100%);
-            }
+    .faithful-hearts-image {
+        >img {
+            width: min(30rem, 100%);
         }
-
-        .double-qoute {
-            color: $red-color;
-        }
-
-        @include heading-style("faithful-hearts-heading", black, 1.6rem, 800);
     }
+
+    .double-qoute {
+        color: $red-color;
+    }
+
+    @include heading-style("faithful-hearts-heading", black, 1.6rem, 800);
 }
 
 @media (min-width: 992px) {
     .faithful-hearts-section {
-        >div {
-            margin: 1rem 3rem;
-
-            .faithful-hearts-image {
-                >img {
-                    width: 100%;
-                }
+        .faithful-hearts-image {
+            >img {
+                width: 100%;
             }
         }
     }
@@ -163,10 +164,6 @@ $red-color: #C0304F;
 
 @media (min-width: 1200px) {
     .faithful-hearts-section {
-        >div {
-            margin: 1rem 15rem;
-        }
-
         .faithful-hearts-bird-image {
             right: 0;
             top: 0;
@@ -177,95 +174,60 @@ $red-color: #C0304F;
 
 //Unleash potential section
 .unleash-potential-section {
-    >div {
-        margin: 1rem 2rem;
-        @include heading-style("unleash-potential-heading", black, 1.6rem, 800);
-        @include button-style("unleash-readmore-button", white, black, 1.1rem);
+    @include heading-style("unleash-potential-heading", black, 1.6rem, 800);
+    @include button-style("unleash-readmore-button", white, black, 1.1rem);
 
-        .unleash-readmore-button {
-            max-width: 10rem;
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    .unleash-potential-section {
-        >div {
-            margin: 1rem 3rem;
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .unleash-potential-section {
-        >div {
-            margin: 1rem 15rem;
-        }
+    .unleash-readmore-button {
+        max-width: 10rem;
     }
 }
 
 
 // Satisfaction saction
 .satisfaction-section {
-    >div {
-        margin: 1rem 2rem;
-        @include heading-style("satisfaction-heading", black, 1.6rem, 800);
+    @include heading-style("satisfaction-heading", black, 1.6rem, 800);
 
-        .satisfaction-heading {
-            margin-left: 1rem;
-        }
+    .satisfaction-heading {
+        margin-left: 1rem;
+    }
 
-        .satisfaction-cards {
-            >div>div {
+    .satisfaction-cards {
+        >div>div {
+            .description {
+                display: none;
+            }
+
+            .read-more-icon {
+                display: inline-block;
+                height: 1.5rem;
+                width: 1.5rem;
+                border: 1px solid grey;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+            }
+
+            &:hover {
+                background-color: pink;
+                border-radius: 1.2rem 1.2rem 1.2rem 0;
+
                 .description {
-                    display: none;
+                    display: block;
                 }
 
                 .read-more-icon {
-                    display: inline-block;
-                    height: 1.5rem;
-                    width: 1.5rem;
-                    border: 1px solid grey;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 50%;
-                }
-
-                &:hover {
-                    background-color: pink;
-                    border-radius: 1.2rem 1.2rem 1.2rem 0;
-
-                    .description {
-                        display: block;
-                    }
-
-                    .read-more-icon {
-                        background-color: $red-color;
-                        color: white;
-                        border: none;
-                    }
+                    background-color: $red-color;
+                    color: white;
+                    border: none;
                 }
             }
-        }
-
-    }
-}
-
-@media (min-width: 992px) {
-    .satisfaction-section {
-        >div {
-            margin: 1rem 3rem;
         }
     }
 }
 
 @media (min-width: 1200px) {
     .satisfaction-section {
-        >div {
-            margin: 1rem 15rem;
-        }
-
         .satisfaction-absolute-leaf {
             right: 0;
             top: 30%;
@@ -274,12 +236,10 @@ $red-color: #C0304F;
     }
 }
 
+// Growing Stronger Section
 .growing-stronger-section {
-    >div {
-        margin: 1rem 2rem;
-        @include heading-style("growing-stronger-heading", black, 1.6rem, 800);
-        @include button-style("growing-learn-more-button", white, black, 1.1rem);
-    }
+    @include heading-style("growing-stronger-heading", black, 1.6rem, 800);
+    @include button-style("growing-learn-more-button", white, black, 1.1rem);
 }
 
 @media (min-width: 576px) {
@@ -289,24 +249,12 @@ $red-color: #C0304F;
 }
 
 @media (min-width: 992px) {
-    .growing-stronger-section {
-        >div {
-            margin: 1rem 3rem;
-        }
-    }
-
     .growing-stronger-hand-image {
         margin-top: 18rem;
     }
 }
 
 @media (min-width: 1200px) {
-    .growing-stronger-section {
-        >div {
-            margin: 1rem 15rem;
-        }
-    }
-
     .growing-stronger-hand-image {
         margin-top: 20 rem;
     }
@@ -322,67 +270,55 @@ $red-color: #C0304F;
 // Your members section
 .your-members-section {
     margin-top: 5rem;
+    @include heading-style("your-members-heading", black, 1.6rem, 800);
 
-    >div {
-        margin: 1rem 2rem;
-        @include heading-style("your-members-heading", black, 1.6rem, 800);
+    .vertical-line {
+        height: 3.5rem;
+        width: 0.1rem;
+        background-color: grey;
+    }
 
-        .vertical-line {
-            height: 3.5rem;
-            width: 0.1rem;
-            background-color: grey;
-        }
+    .your-member-share-icon-container {
+        height: 3rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid grey;
 
-        .your-member-share-icon-container {
-            height: 3rem;
-            aspect-ratio: 1/1;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid grey;
-
-            >img {
-                height: 1.6rem;
-                cursor: pointer;
-            }
-        }
-
-        .your-members-social-icons {
-            visibility: hidden;
-        }
-
-        .your-members-cards>div>div {
-            transition: all 0.8s ease;
-
-            &:hover {
-                .your-member-share-icon-container {
-                    background-color: $red-color;
-                    border: none;
-                }
-
-                .your-members-social-icons {
-                    visibility: visible;
-                }
-            }
-        }
-
-        .your-members-all-teams-members {
-            hr {
-                color: grey;
-                width: calc(50% - 115px);
-            }
-
-            @include button-style("all-team-members-button", white, black, 1.1rem);
+        >img {
+            height: 1.6rem;
+            cursor: pointer;
         }
     }
-}
 
-@media (min-width: 992px) {
-    .your-members-section {
-        >div {
-            margin: 1rem 3rem;
+    .your-members-social-icons {
+        visibility: hidden;
+    }
+
+    .your-members-cards>div>div {
+        transition: all 0.8s ease;
+
+        &:hover {
+            .your-member-share-icon-container {
+                background-color: $red-color;
+                border: none;
+            }
+
+            .your-members-social-icons {
+                visibility: visible;
+            }
         }
+    }
+
+    .your-members-all-teams-members {
+        hr {
+            color: grey;
+            width: calc(50% - 115px);
+        }
+
+        @include button-style("all-team-members-button", white, black, 1.1rem);
     }
 }
 
@@ -390,10 +326,6 @@ $red-color: #C0304F;
     .your-members-section {
         margin-top: 15rem;
         margin-bottom: 15rem;
-
-        >div {
-            margin: 1rem 15rem;
-        }
 
         .absolute-crown-image {
             top: -12rem;
@@ -413,11 +345,13 @@ $red-color: #C0304F;
 
 // See our All Events Section
 .all-events-section {
-    >div{
+    >div {
         .all-events-heading-content {
             margin: 1rem 2rem;
         }
+
         @include heading-style("all-events-heading", black, 1.6rem, 800);
+
         .all-events-left-right-buttons {
             div {
                 height: 3rem;
@@ -425,6 +359,7 @@ $red-color: #C0304F;
                 border: 1px solid grey;
                 border-radius: 50%;
                 font-size: 1.5rem;
+
                 &:hover {
                     border: none;
                     background-color: $red-color;
@@ -432,33 +367,40 @@ $red-color: #C0304F;
                 }
             }
         }
+
         .all-events-cards {
             margin-left: 2rem;
             display: flex;
             gap: 2rem;
+
             .event-card {
                 border: 1px solid grey;
                 border-radius: 0.7rem 0 0.7rem 0.7rem;
                 width: 16rem;
             }
-            &::-webkit-scrollbar{
+
+            &::-webkit-scrollbar {
                 display: none;
             }
+
             @include button-style('all-events-join-now-button', white, black, 1.1rem);
+
             .all-events-join-now-button {
                 max-width: 10rem;
             }
         }
-        
+
     }
 }
+
 @media (min-width: 576px) {
-    .all-events-section{
+    .all-events-section {
         >div {
             .all-events-cards {
                 margin-left: 2rem;
                 display: flex;
                 gap: 2rem;
+
                 .event-card {
                     width: unset;
                     padding-right: 6rem;
@@ -472,22 +414,25 @@ $red-color: #C0304F;
 
 @media(min-width: 992px) {
     .all-events-section {
-        >div{
+        >div {
             .all-events-heading-content {
                 margin: 1rem 3rem;
             }
+
             .all-events-cards {
                 margin-left: 3rem;
             }
         }
     }
 }
+
 @media(min-width: 1200px) {
     .all-events-section {
-        >div{
+        >div {
             .all-events-heading-content {
                 margin: 1rem 15rem;
             }
+
             .all-events-cards {
                 margin-left: 15rem;
             }
@@ -497,54 +442,61 @@ $red-color: #C0304F;
 
 // Latest article section
 .articles-section {
-    >div {
-        margin: 1rem 2rem;
-        @include heading-style("articles-heading", black, 1.6rem, 800);
-        .articles-cards {
-            .article-card {
-                width: calc(100% / 1);
-            }
-            &::-webkit-scrollbar {
-                display: none;
-            }
-        }
-        .article-feature {
-            border-radius: 0.5rem;
-            background-color: white;
-            top: 50%;
-            transform: translateY(-50%);
-            height: 90%;
-            width: 90%;
-            h5 {
-                font-size: 1rem;
-            }
-            h3 {
-                font-size: 1.1rem;
-            }
-            p{
-                font-size: 0.8rem;
-            }
-        }
-        .article-subscribe {
-            @include button-style('article-subscribe-button', white, black, 1.1rem);
-            .article-subscribe-button {
-                max-width: 10rem;
-            }
-            >div {
-                border: 1.1px solid grey;
-                border-radius: 0.6rem;
-            }
+    @include heading-style("articles-heading", black, 1.6rem, 800);
+
+    .articles-cards {
+        .article-card {
+            width: calc(100% / 1);
         }
 
-        .article-next-buttons-container {
-            >div {
-                height: 1.8rem;
-                width: 1.8rem;
-                border: 1px solid grey;
-            }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .article-feature {
+        border-radius: 0.5rem;
+        background-color: white;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 90%;
+        width: 90%;
+
+        h5 {
+            font-size: 1rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+    .article-subscribe {
+        @include button-style('article-subscribe-button', white, black, 1.1rem);
+
+        .article-subscribe-button {
+            max-width: 10rem;
+        }
+
+        >div {
+            border: 1.1px solid grey;
+            border-radius: 0.6rem;
+        }
+    }
+
+    .article-next-buttons-container {
+        >div {
+            height: 1.8rem;
+            width: 1.8rem;
+            border: 1px solid grey;
         }
     }
 }
+
 @media (min-width: 576px) {
     .articles-section {
         >div {
@@ -553,17 +505,21 @@ $red-color: #C0304F;
                     width: calc(100% / 2);
                 }
             }
+
             .article-feature {
                 height: 80%;
                 width: 50%;
                 left: 3rem;
+
                 h5 {
                     font-size: 1.2rem;
                 }
+
                 h3 {
                     font-size: 1.4rem;
                 }
-                p{
+
+                p {
                     font-size: 1rem;
                 }
             }
@@ -574,20 +530,11 @@ $red-color: #C0304F;
 @media (min-width: 992px) {
     .articles-section {
         >div {
-            margin: 1rem 3rem;
             .articles-cards {
                 .article-card {
                     width: calc(100% / 3);
                 }
             }
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .articles-section {
-        >div {
-            margin: 1rem 15rem;
         }
     }
 }

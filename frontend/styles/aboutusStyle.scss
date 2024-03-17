@@ -2,7 +2,7 @@
 $red-color: #C0304F;
 $pink-color: #FFE6E0;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,66 +29,63 @@ $pink-color: #FFE6E0;
     }
 }
 
-.aboutus-section{
+.all-pages-margin {
     >div {
         margin: 1rem 2rem;
-        @include button-style('learn-more-button', white, black, 1.1rem);
-        @include heading-style("aboutus-heading", black, 1.6rem, 800);
-        .learn-more-button {
-            max-width: 10rem;
-        }
-        .aboutus-stats {
-            background-color: $pink-color;
-            border-radius: 0.6rem;
-        }
     }
 }
+
 @media (min-width: 992px) {
-    .aboutus-section{
+    .all-pages-margin {
         >div {
             margin: 1rem 3rem;
         }
     }
 }
+
 @media (min-width: 1200px) {
-    .aboutus-section{
+    .all-pages-margin {
         >div {
             margin: 1rem 15rem;
         }
     }
 }
 
+.aboutus-section {
+    @include button-style('learn-more-button', white, black, 1.1rem);
+    @include heading-style("aboutus-heading", black, 1.6rem, 800);
+
+    .learn-more-button {
+        max-width: 10rem;
+    }
+
+    .aboutus-stats {
+        background-color: $pink-color;
+        border-radius: 0.6rem;
+    }
+}
+
 // Walking section
 .walking-section {
-    >div {
-        margin: 1rem 2rem;
-        @include heading-style("walking-section-heading", black, 1.6rem, 800);
-        .walking-card {
-            >div{
-                background-color: $pink-color;
-                border-radius: 0.6rem;
-            }
-            .image-container {
-                height: 3.2rem;
-                width: 3.2rem;
-                background-color: white;
-                border-radius: 50%;
-            }
-        }
-    }
-}
-@media (min-width: 992px) {
-    .walking-section{
+    @include heading-style("walking-section-heading", black, 1.6rem, 800);
+
+    .walking-card {
         >div {
-            margin: 1rem 3rem;
+            background-color: $pink-color;
+            border-radius: 0.6rem;
+        }
+
+        .image-container {
+            height: 3.2rem;
+            width: 3.2rem;
+            background-color: white;
+            border-radius: 50%;
         }
     }
 }
+
 @media (min-width: 1200px) {
-    .walking-section{
-        >div {
-            margin: 1rem 15rem;
-        }
+    .walking-section {
         .walking-section-absolute-image {
             width: 15rem;
             right: 0;
@@ -99,42 +96,37 @@ $pink-color: #FFE6E0;
 
 // Happy prayers Section
 .happy-prayers-section {
-    >div{
-        margin: 1rem 2rem;
-        .large-book-image {
-            width: 100%;
-        }
-        .happy-prayers-numbers {
-            background-color: $red-color;
-            border-radius: 50%;
-            padding: 2rem;
-            right: 0.5rem;
-            bottom: 2rem;
-            color: white;
-            border: 0.3rem solid white;
-        }
-        .one-two-three {
-            height: 3rem;
-            top: -1.5rem;
-            left: -2.2rem;
-        }
+    .large-book-image {
+        width: 100%;
+    }
+
+    .happy-prayers-numbers {
+        background-color: $red-color;
+        border-radius: 50%;
+        padding: 2rem;
+        right: 0.5rem;
+        bottom: 2rem;
+        color: white;
+        border: 0.3rem solid white;
+    }
+
+    .one-two-three {
+        height: 3rem;
+        top: -1.5rem;
+        left: -2.2rem;
     }
 }
+
 @media (min-width: 992px) {
     .happy-prayers-section {
-        >div {
-            margin: 1rem 3rem;
-            .large-book-image {
-                width: 80%;
-            }
+        .large-book-image {
+            width: 80%;
         }
     }
 }
+
 @media (min-width: 1200px) {
     .happy-prayers-section {
-        >div {
-            margin: 1rem 15rem;
-        }
         .prayers-section-absolute-image {
             width: 15rem;
             left: 0;

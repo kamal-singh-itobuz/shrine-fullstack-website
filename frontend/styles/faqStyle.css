@@ -5,73 +5,67 @@
   box-sizing: border-box;
 }
 
-.hero-section > div {
+.all-pages-margin > div {
   margin: 1rem 2rem;
 }
-.hero-section > div .hero-images-container::-webkit-scrollbar {
+
+@media (min-width: 992px) {
+  .all-pages-margin > div {
+    margin: 1rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .all-pages-margin > div {
+    margin: 1rem 15rem;
+  }
+}
+.hero-section .hero-images-container::-webkit-scrollbar {
   display: none;
 }
-.hero-section > div .hero-left-right-buttons {
+.hero-section .hero-left-right-buttons {
   right: -0.8rem;
   top: 50%;
   transform: translateY(-50%);
 }
-.hero-section > div .hero-left-right-buttons > span {
+.hero-section .hero-left-right-buttons > span {
   padding: 0.2rem;
   font-size: 0.8rem;
   border-radius: 0.2rem;
   background-color: black;
   color: white;
 }
-.hero-section > div .hero-left-right-buttons > span:first-child {
+.hero-section .hero-left-right-buttons > span:first-child {
   background-color: #C0304F;
 }
 
 @media (min-width: 992px) {
-  .hero-section > div {
-    margin: 1rem 3rem;
-  }
-  .hero-section > div .hero-left-right-buttons {
+  .hero-section .hero-left-right-buttons {
     right: -1.8rem;
   }
-  .hero-section > div .hero-left-right-buttons > span {
+  .hero-section .hero-left-right-buttons > span {
     padding: 1rem;
     font-size: 1rem;
   }
 }
-@media (min-width: 1200px) {
-  .hero-section > div {
-    margin: 1rem 15rem;
-  }
-}
-.faq-section > div {
-  margin: 1rem 2rem;
-}
-.faq-section > div .faq-heading {
+.faq-section .faq-heading {
   color: black;
   font-size: 1.6rem;
   font-weight: 800;
   border-left: 0.2rem solid #C0304F;
   padding-left: 0.8rem;
 }
-.faq-section > div .accordion-button {
+.faq-section .accordion-button {
   font-size: 1.1rem;
   font-weight: 650;
 }
 
 @media (min-width: 992px) {
-  .faq-section > div {
-    margin: 1rem 3rem;
-  }
-  .faq-section > div .accordion-button {
+  .faq-section .accordion-button {
     font-size: 1.4rem;
     font-weight: 700;
   }
 }
 @media (min-width: 1200px) {
-  .faq-section > div {
-    margin: 1rem 15rem;
-  }
   .faq-section .faq-crown-absolute-image {
     width: 13rem;
     top: 1rem;

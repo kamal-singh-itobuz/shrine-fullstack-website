@@ -5,10 +5,21 @@
   box-sizing: border-box;
 }
 
-.aboutus-section > div {
+.all-pages-margin > div {
   margin: 1rem 2rem;
 }
-.aboutus-section > div .learn-more-button {
+
+@media (min-width: 992px) {
+  .all-pages-margin > div {
+    margin: 1rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .all-pages-margin > div {
+    margin: 1rem 15rem;
+  }
+}
+.aboutus-section .learn-more-button {
   color: white;
   background-color: black;
   font-size: 1.1rem;
@@ -16,74 +27,50 @@
   border-radius: 0.5rem;
   border: none;
 }
-.aboutus-section > div .aboutus-heading {
+.aboutus-section .aboutus-heading {
   color: black;
   font-size: 1.6rem;
   font-weight: 800;
   border-left: 0.2rem solid #C0304F;
   padding-left: 0.8rem;
 }
-.aboutus-section > div .learn-more-button {
+.aboutus-section .learn-more-button {
   max-width: 10rem;
 }
-.aboutus-section > div .aboutus-stats {
+.aboutus-section .aboutus-stats {
   background-color: #FFE6E0;
   border-radius: 0.6rem;
 }
 
-@media (min-width: 992px) {
-  .aboutus-section > div {
-    margin: 1rem 3rem;
-  }
-}
-@media (min-width: 1200px) {
-  .aboutus-section > div {
-    margin: 1rem 15rem;
-  }
-}
-.walking-section > div {
-  margin: 1rem 2rem;
-}
-.walking-section > div .walking-section-heading {
+.walking-section .walking-section-heading {
   color: black;
   font-size: 1.6rem;
   font-weight: 800;
   border-left: 0.2rem solid #C0304F;
   padding-left: 0.8rem;
 }
-.walking-section > div .walking-card > div {
+.walking-section .walking-card > div {
   background-color: #FFE6E0;
   border-radius: 0.6rem;
 }
-.walking-section > div .walking-card .image-container {
+.walking-section .walking-card .image-container {
   height: 3.2rem;
   width: 3.2rem;
   background-color: white;
   border-radius: 50%;
 }
 
-@media (min-width: 992px) {
-  .walking-section > div {
-    margin: 1rem 3rem;
-  }
-}
 @media (min-width: 1200px) {
-  .walking-section > div {
-    margin: 1rem 15rem;
-  }
   .walking-section .walking-section-absolute-image {
     width: 15rem;
     right: 0;
     top: 2rem;
   }
 }
-.happy-prayers-section > div {
-  margin: 1rem 2rem;
-}
-.happy-prayers-section > div .large-book-image {
+.happy-prayers-section .large-book-image {
   width: 100%;
 }
-.happy-prayers-section > div .happy-prayers-numbers {
+.happy-prayers-section .happy-prayers-numbers {
   background-color: #C0304F;
   border-radius: 50%;
   padding: 2rem;
@@ -92,24 +79,18 @@
   color: white;
   border: 0.3rem solid white;
 }
-.happy-prayers-section > div .one-two-three {
+.happy-prayers-section .one-two-three {
   height: 3rem;
   top: -1.5rem;
   left: -2.2rem;
 }
 
 @media (min-width: 992px) {
-  .happy-prayers-section > div {
-    margin: 1rem 3rem;
-  }
-  .happy-prayers-section > div .large-book-image {
+  .happy-prayers-section .large-book-image {
     width: 80%;
   }
 }
 @media (min-width: 1200px) {
-  .happy-prayers-section > div {
-    margin: 1rem 15rem;
-  }
   .happy-prayers-section .prayers-section-absolute-image {
     width: 15rem;
     left: 0;

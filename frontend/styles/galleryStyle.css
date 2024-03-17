@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.all-pages-margin > div {
+  margin: 1rem 2rem;
+}
+
+@media (min-width: 992px) {
+  .all-pages-margin > div {
+    margin: 1rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .all-pages-margin > div {
+    margin: 1rem 15rem;
+  }
+}
+.gallery-section .gallery-section-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+.gallery-section .gallery-categories button {
+  border: none;
+  border-bottom: 0.3rem solid white;
+  background-color: white;
+  padding-bottom: 0.8rem;
+}
+.gallery-section .gallery-categories button:first-child {
+  border-bottom: 0.3rem solid #C0304F;
+  font-weight: 700;
+}
+.gallery-section .gallery-categories::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=galleryStyle.css.map */

@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQs</title>
+    <title>Gallery</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../navbar/navbar.css">
     <link rel="stylesheet" href="../footer/footer.css">
-    <link rel="stylesheet" href="../styles/faqStyle.css">
+    <link rel="stylesheet" href="../styles/galleryStyle.css">
 </head>
 
 <body>
-    <!-- NAV SECTION -->
+    <!-- NAVBAR -->
     <nav class="navbar-section navbar navbar-expand-lg border-bottom position-relative py-2 pt-4 bg-white"></nav>
 
     <div class="d-flex justify-content-center gap-3 my-5">
@@ -24,35 +24,36 @@
         <span class="bold-content"> FAQ </span>
     </div>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section class="hero-section all-pages-margin">
-        <div class="position-relative">
-            <div class="hero-images-container d-flex  overflow-x-scroll">
-                <div class="hero-left-right-buttons position-absolute d-flex flex-column ">
-                    <span role="button"> <-- </span>
-                            <span role="button"> --> </span>
-                </div>
+        <div class="hero-container row row-gap-3">
+            <div class="col-12 col-md-6">
+                <img class="w-100" src="../images/galleryPage/hero-church-one.png" alt="Church1">
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="w-100" src="../images/galleryPage/hero-church-two.png" alt="Church2">
             </div>
         </div>
     </section>
 
-    <!-- Frequently Asked Questions -->
-    <section class="faq-section position-relative all-pages-margin">
+    <!-- Gallery Section -->
+    <section class="gallery-section all-pages-margin">
         <div>
-            <div>
-                <h2 class="faq-heading mb-4">Frequently <br> Asked Questions</h2>
+            <div class="mb-5">
+                <h2 class="gallery-section-heading">Our Saviour Jesus Christ <br> Waits Your Gallery</h2>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like.</p>
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
             </div>
-            <div class="faq-container row mt-4 accordion accordion-flush" id="accordionFlushExample"></div>
+            <div class="gallery-categories d-flex gap-3 gap-md-4 overflow-x-scroll">
+
+            </div>
+            <hr class="m-0 mb-5">
+            <div class="gallery-container row"></div>
         </div>
-        <img class="faq-crown-absolute-image position-absolute d-none d-xl-block"
-            src="../images/faqPage/crown-absolute.png" alt="Crown">
     </section>
-    <!-- FOOTER SECTION -->
+    <!-- FOOTER -->
     <footer class="footer-section mt-5"></footer>
-    <script type="module" src="../js/faqPage.js"></script>
+    <script type="module" src="../js/galleryPage.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>

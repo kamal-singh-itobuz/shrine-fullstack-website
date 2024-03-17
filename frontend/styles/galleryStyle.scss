@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+$red-color: #C0304F;
+$pink-color: #FFE6E0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin heading-style($name, $color, $fs, $fw) {
+    .#{$name} {
+        color: $color;
+        font-size: $fs;
+        font-weight: $fw;
+        border-left: 0.2rem solid $red-color;
+        padding-left: 0.8rem;
+    }
+}
+
+.all-pages-margin {
+    >div {
+        margin: 1rem 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .all-pages-margin {
+        >div {
+            margin: 1rem 3rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .all-pages-margin {
+        >div {
+            margin: 1rem 15rem;
+        }
+    }
+}
+
+
+//Gallery Section
+.gallery-section {
+    @include heading-style('gallery-section-heading', black, 1.6rem, 800);
+
+    .gallery-categories {
+        button {
+            border: none;
+            border-bottom: 0.3rem solid white;
+            background-color: white;
+            padding-bottom: 0.8rem;
+
+            &:first-child {
+                border-bottom: 0.3rem solid $red-color;
+                font-weight: 700;
+            }
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

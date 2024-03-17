@@ -2,21 +2,10 @@
 $red-color: #C0304F;
 $pink-color: #FFE6E0;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@mixin button-style($name, $color, $bg-color, $fs) {
-    .#{$name} {
-        color: $color;
-        background-color: $bg-color;
-        font-size: $fs;
-        padding: 0.5rem 1.5rem;
-        border-radius: 0.5rem;
-        border: none;
-    }
 }
 
 @mixin heading-style($name, $color, $fs, $fw) {
@@ -29,26 +18,47 @@ $pink-color: #FFE6E0;
     }
 }
 
-.hero-section {
+.all-pages-margin {
     >div {
         margin: 1rem 2rem;
-        .hero-images-container::-webkit-scrollbar{
-            display: none;
-        }
+    }
+}
 
-        .hero-left-right-buttons {
-            right: -0.8rem;
-            top: 50%;
-            transform: translateY(-50%);
-            >span {
-                padding: 0.2rem;
-                font-size: 0.8rem;
-                border-radius: 0.2rem;
-                background-color: black;
-                color: white;
-                &:first-child {
-                    background-color: $red-color;
-                }
+@media (min-width: 992px) {
+    .all-pages-margin {
+        >div {
+            margin: 1rem 3rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .all-pages-margin {
+        >div {
+            margin: 1rem 15rem;
+        }
+    }
+}
+
+.hero-section {
+    .hero-images-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hero-left-right-buttons {
+        right: -0.8rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        >span {
+            padding: 0.2rem;
+            font-size: 0.8rem;
+            border-radius: 0.2rem;
+            background-color: black;
+            color: white;
+
+            &:first-child {
+                background-color: $red-color;
             }
         }
     }
@@ -56,53 +66,38 @@ $pink-color: #FFE6E0;
 
 @media (min-width: 992px) {
     .hero-section {
-        >div {
-            margin: 1rem 3rem;
-            .hero-left-right-buttons {
-                right: -1.8rem;
-                >span {
-                    padding: 1rem;
-                    font-size: 1rem;
-                }
+        .hero-left-right-buttons {
+            right: -1.8rem;
+
+            >span {
+                padding: 1rem;
+                font-size: 1rem;
             }
-        }
-    }
-}
-@media (min-width: 1200px) {
-    .hero-section {
-        >div {
-            margin: 1rem 15rem;
         }
     }
 }
 
 // FAQ SECTION
 .faq-section {
-    >div {
-        margin: 1rem 2rem;
-        @include heading-style('faq-heading', black, 1.6rem, 800);
-        .accordion-button {
-            font-size: 1.1rem;
-            font-weight: 650;
-        }
+    @include heading-style('faq-heading', black, 1.6rem, 800);
+
+    .accordion-button {
+        font-size: 1.1rem;
+        font-weight: 650;
     }
 }
+
 @media (min-width: 992px) {
     .faq-section {
-        >div {
-            margin: 1rem 3rem;
-            .accordion-button {
-                font-size: 1.4rem;
-                font-weight: 700;
-            }
+        .accordion-button {
+            font-size: 1.4rem;
+            font-weight: 700;
         }
     }
 }
+
 @media (min-width: 1200px) {
     .faq-section {
-        >div {
-            margin: 1rem 15rem;
-        }
         .faq-crown-absolute-image {
             width: 13rem;
             top: 1rem;
