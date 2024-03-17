@@ -1,7 +1,7 @@
-const footerComponent = () => {
+const footerComponent = (page) => {
     return ` <div class="container pt-5">
         <div class="footer-logo-text row justify-content-between align-items-center ">
-            <img class="col-5 col-md-4 col-lg-3" src="./footer/footerImages/shrine-white.svg" alt="Shrine Logo">
+            <img class="col-5 col-md-4 col-lg-3" src="${page}./footer/footerImages/shrine-white.svg" alt="Shrine Logo">
             <p class="col-12 col-md-6 col-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt</p>
         </div>
@@ -47,11 +47,11 @@ const footerComponent = () => {
             class="copyright-icons d-flex flex-column align-items-center flex-md-row justify-content-md-between py-3">
             <p>Copyright &copy; 2022 Shrine. All Rights Reserved.</p>
             <div class="d-flex justify-content-center gap-3">
-                <img role="button" src="./footer/footerImages/instagram.svg" alt="Instagram">
-                <img role="button" src="./footer/footerImages/twitter.svg" alt="Twitter">
-                <img role="button" src="./footer/footerImages/whatsapp.svg" alt="Whatsapp">
-                <img role="button" src="./footer/footerImages/youtube.svg" alt="Youtube">
-                <img role="button" src="./footer/footerImages/facebook.svg" alt="Facebook">
+                <img role="button" src="${page}./footer/footerImages/instagram.svg" alt="Instagram">
+                <img role="button" src="${page}./footer/footerImages/twitter.svg" alt="Twitter">
+                <img role="button" src="${page}./footer/footerImages/whatsapp.svg" alt="Whatsapp">
+                <img role="button" src="${page}./footer/footerImages/youtube.svg" alt="Youtube">
+                <img role="button" src="${page}./footer/footerImages/facebook.svg" alt="Facebook">
             </div>
         </div>
     </div>`
