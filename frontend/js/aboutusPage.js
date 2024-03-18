@@ -8,24 +8,19 @@ const aboutusStatsContainer = document.querySelector('.aboutus-stats');
 const walkingCardsContainer = document.querySelector('.walking-cards-container');
 navbarSection.innerHTML = navbarComponent('.');
 footerSection.innerHTML = footerComponent('.');
-const apiURLs = ['http://localhost:8082/aboutus/stats', 'http://localhost:8082/aboutus/walking'];
 
+const apiNames = ['stats', 'walking'];
 function createSections(data, cardCreaterFunction, container) {
     data.forEach(singleCard => {
         cardCreaterFunction(singleCard, container);
     });
 }
 
-async function fetchData(url) {
-    const response = await fetch(url);
+async function fetchData(name) {
+    const response = await fetch(`http://localhost:8082/aboutus/${name}`);
     const jsonData = await response.json();
-    if(jsonData.section === 'aboutus') {
-        createSections(jsonData.aboutusStats, createAboutusStats, aboutusStatsContainer);
-    }
-    if(jsonData.section === 'walking') {
-        createSections(jsonData.cardData, createWalkingCard, walkingCardsContainer);
-    }
+    if(name === 'stats') createSections(jsonData.aboutusStats, createAboutusStats, aboutusStatsContainer);
+    if(name === 'walking') createSections(jsonData.cardData, createWalkingCard, walkingCardsContainer);
 }
 
-
-apiURLs.forEach(url =>  fetchData(url));
+apiNames.forEach(name =>  fetchData(name));

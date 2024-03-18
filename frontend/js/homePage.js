@@ -1,6 +1,6 @@
 import navbarComponent from "../navbar/navbar.js";
 import footerComponent from "../footer/footer.js";
-import {createSatisfactionCardFunction, createMemberCardFunction, createEventCardFunction, createArticleCardFunction} from "../helper/homeHelper.js";
+import { createSatisfactionCardFunction, createMemberCardFunction, createEventCardFunction, createArticleCardFunction } from "../helper/homeHelper.js";
 
 const navbarSection = document.querySelector('.navbar-section');
 const footerSection = document.querySelector('.footer-section');
@@ -14,16 +14,16 @@ const articleNextButtonsContainer = document.querySelector('.article-next-button
 navbarSection.innerHTML = navbarComponent(''); // '' refersing to index.html
 footerSection.innerHTML = footerComponent('');
 
-const apiName = ['satisfaction', 'members', 'events', 'articles'];
+const apiNames = ['satisfaction', 'members', 'events', 'articles'];
 
 function createArticleNextButtons(cardsData, container) {
     const noOfCards = cardsData.length;
     const screenWidth = window.innerWidth;
-    let noOfButtons = noOfCards+1;
-    if(screenWidth > 576 && screenWidth <= 992) noOfButtons = noOfCards%2 === 0 ? noOfCards/2 + 1 : Math.floor(noOfCards/2) + 2;
-    else if(screenWidth > 992) noOfButtons = noOfCards%3 === 0 ? noOfCards/3 + 1 : Math.floor(noOfCards/3) + 2;
+    let noOfButtons = noOfCards + 1;
+    if (screenWidth > 576 && screenWidth <= 992) noOfButtons = noOfCards % 2 === 0 ? noOfCards / 2 + 1 : Math.floor(noOfCards / 2) + 2;
+    else if (screenWidth > 992) noOfButtons = noOfCards % 3 === 0 ? noOfCards / 3 + 1 : Math.floor(noOfCards / 3) + 2;
 
-    for(let i=1; i<= noOfButtons; i++) {
+    for (let i = 1; i <= noOfButtons; i++) {
         const buttonDiv = document.createElement('div');
         buttonDiv.setAttribute('role', 'button');
         buttonDiv.setAttribute('class', 'd-flex justify-content-center align-items-center');
@@ -38,7 +38,7 @@ function createSectionCards(data, cardCreaterFunction, cardsContainer) {
     });
 }
 
-async function postEmail (apiUrl, emailId) {
+async function postEmail(apiUrl, emailId) {
     const response = await fetch(apiUrl, {
         method: "POST",
         mode: "cors",
@@ -50,25 +50,25 @@ async function postEmail (apiUrl, emailId) {
     return response.json();
 }
 
-async function fetchData (apiURL) {
-    const response = await fetch(apiURL);
+async function fetchData(name) {
+    const response = await fetch(`http://localhost:8082/home/${name}`);
     const sectionData = await response.json();
     const cardsData = sectionData.cardData;
 
-    if(sectionData.section === 'satisfaction') createSectionCards(cardsData, createSatisfactionCardFunction, satisfactionCards);
-    if(sectionData.section === 'members') createSectionCards(cardsData, createMemberCardFunction, yourMembersCards);
-    if(sectionData.section === 'events') createSectionCards(cardsData, createEventCardFunction, eventsCards);
-    if(sectionData.section === 'articles'){
+    if (name === 'satisfaction') createSectionCards(cardsData, createSatisfactionCardFunction, satisfactionCards);
+    if (name === 'members') createSectionCards(cardsData, createMemberCardFunction, yourMembersCards);
+    if (name === 'events') createSectionCards(cardsData, createEventCardFunction, eventsCards);
+    if (name === 'articles') {
         createSectionCards(cardsData, createArticleCardFunction, articlesCards);
         createArticleNextButtons(cardsData, articleNextButtonsContainer);
     }
 }
 
-apiName.forEach(ele => fetchData(`http://localhost:8082/home/${ele}`));
+apiNames.forEach(name => fetchData(name));
 
 articleSubscribeButton.addEventListener('click', () => {
-    if(articleInputEmail.value.trim()) {
-        postEmail("http://localhost:8082/home/subscribe", {email: articleInputEmail.value.trim()});
+    if (articleInputEmail.value.trim()) {
+        postEmail("http://localhost:8082/home/subscribe", { email: articleInputEmail.value.trim() });
         articleInputEmail.value = "";
     }
 });

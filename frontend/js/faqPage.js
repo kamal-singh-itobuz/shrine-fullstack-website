@@ -8,7 +8,8 @@ const heroContainer = document.querySelector('.hero-images-container');
 const faqContainer = document.querySelector('.faq-container');
 navbarSection.innerHTML = navbarComponent('.');
 footerSection.innerHTML = footerComponent('.');
-const apiURLs = ['http://localhost:8082/faq/hero', 'http://localhost:8082/faq/faqs'];
+
+const apiNames = ['hero', 'faqs'];
 
 function createSection (data, createFunction, container) {
     data.forEach(singleData => {
@@ -16,11 +17,11 @@ function createSection (data, createFunction, container) {
     });
 }
 
-async function fetchData(url) {
-    const response = await fetch(url);
+async function fetchData(name) {
+    const response = await fetch(`http://localhost:8082/faq/${name}`);
     const jsonData = await response.json();
-    if(jsonData.section === 'faq') createSection(jsonData.faqs, createFAQsFunction, faqContainer);
-    else createSection(jsonData, createHeroFunction, heroContainer);
+    if(name === 'hero') createSection(jsonData, createHeroFunction, heroContainer);
+    if(name === 'faqs') createSection(jsonData.faqs, createFAQsFunction, faqContainer);
 }
 
-apiURLs.forEach(url => fetchData(url));
+apiNames.forEach(name => fetchData(name));
