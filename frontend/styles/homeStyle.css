@@ -249,6 +249,12 @@
   height: 1.6rem;
   cursor: pointer;
 }
+.your-members-section .your-member-share-icon-container > img:first-child {
+  display: block;
+}
+.your-members-section .your-member-share-icon-container > img:last-child {
+  display: none;
+}
 .your-members-section .your-members-social-icons {
   visibility: hidden;
 }
@@ -258,6 +264,12 @@
 .your-members-section .your-members-cards > div > div:hover .your-member-share-icon-container {
   background-color: #C0304F;
   border: none;
+}
+.your-members-section .your-members-cards > div > div:hover .your-member-share-icon-container > img:first-child {
+  display: none;
+}
+.your-members-section .your-members-cards > div > div:hover .your-member-share-icon-container > img:last-child {
+  display: block;
 }
 .your-members-section .your-members-cards > div > div:hover .your-members-social-icons {
   visibility: visible;

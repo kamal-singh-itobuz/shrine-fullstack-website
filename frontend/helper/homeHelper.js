@@ -4,8 +4,10 @@ function createMemberCardFunction(data, cardsContainer) {
     card.innerHTML =  `<div class="d-flex flex-column gap-2 p-3">
         <div><img class="w-100" src=${data.imgUrl} alt="Lori Vega"></div>
         <div class="d-flex gap-2">
-            <div class="your-member-share-icon-container"><img
-                    src="./images/homePage/yourMembersSection/share_android.svg" alt="Share icon"></div>
+            <div class="your-member-share-icon-container">
+                <img src="./images/homePage/yourMembersSection/share-black.svg" alt="Share icon">
+                <img src="./images/homePage/yourMembersSection/share-white.svg" alt="Share icon">
+            </div>
             <div class="vertical-line"></div>
             <div class="d-flex- flex-column gap-2">
                 <h5>${data.title}</h5>

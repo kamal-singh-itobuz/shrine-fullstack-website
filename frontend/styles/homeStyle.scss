@@ -291,6 +291,12 @@ $red-color: #C0304F;
             height: 1.6rem;
             cursor: pointer;
         }
+        >img:first-child {
+            display: block;
+        }
+        >img:last-child {
+            display: none;
+        }
     }
 
     .your-members-social-icons {
@@ -304,6 +310,12 @@ $red-color: #C0304F;
             .your-member-share-icon-container {
                 background-color: $red-color;
                 border: none;
+                >img:first-child {
+                    display: none;
+                }
+                >img:last-child {
+                    display: block;
+                }
             }
 
             .your-members-social-icons {

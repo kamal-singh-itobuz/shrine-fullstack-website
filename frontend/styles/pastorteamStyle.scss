@@ -38,3 +38,103 @@ $pink-color: #FFE6E0;
         }
     }
 }
+
+// hero section
+.hero-section {
+    @include heading-style('hero-section-heading', black, 1.6rem, 800);
+    .hero-images-container::-webkit-scrollbar {
+        display: none;
+    }
+    .hero-left-right-buttons {
+        right: -0.8rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        >span {
+            padding: 0.2rem;
+            font-size: 0.8rem;
+            border-radius: 0.2rem;
+            background-color: black;
+            color: white;
+
+            &:first-child {
+                background-color: $red-color;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .hero-section {
+        .hero-left-right-buttons {
+            right: -1.8rem;
+
+            >span {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .hero-absolute-image {
+        right: 0;
+        top: 6rem;
+        height: 20rem;
+    }
+    .members-absolute-image {
+        left: 0;
+        top: 0;
+        height: 15rem;
+    }
+}
+
+//members section
+.members-section {
+    .vertical-line {
+        height: 3.2rem;
+        width: 0.1rem;
+        background-color: grey;
+    }
+    .your-member-share-icon-container {
+        height: 3rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid grey;
+
+        >img {
+            height: 1.6rem;
+            cursor: pointer;
+        }
+        >img:first-child {
+            display: block;
+        }
+        >img:last-child {
+            display: none;
+        }
+    }
+
+    .your-members-social-icons {
+        visibility: hidden;
+    }
+    .your-members-cards>div>div {
+        transition: all 0.8s ease;
+        &:hover {
+            .your-member-share-icon-container {
+                background-color: $red-color;
+                border: none;
+                >img:first-child {
+                    display: none;
+                }
+                >img:last-child {
+                    display: block;
+                }
+            }
+            .your-members-social-icons {
+                visibility: visible;
+            }
+        }
+    }
+}

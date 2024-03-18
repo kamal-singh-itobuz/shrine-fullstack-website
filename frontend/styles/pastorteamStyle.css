@@ -18,4 +18,94 @@
   .all-pages-margin > div {
     margin: 1rem 15rem;
   }
+}
+.hero-section .hero-section-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+.hero-section .hero-images-container::-webkit-scrollbar {
+  display: none;
+}
+.hero-section .hero-left-right-buttons {
+  right: -0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero-section .hero-left-right-buttons > span {
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  background-color: black;
+  color: white;
+}
+.hero-section .hero-left-right-buttons > span:first-child {
+  background-color: #C0304F;
+}
+
+@media (min-width: 992px) {
+  .hero-section .hero-left-right-buttons {
+    right: -1.8rem;
+  }
+  .hero-section .hero-left-right-buttons > span {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-absolute-image {
+    right: 0;
+    top: 6rem;
+    height: 20rem;
+  }
+  .members-absolute-image {
+    left: 0;
+    top: 0;
+    height: 15rem;
+  }
+}
+.members-section .vertical-line {
+  height: 3.2rem;
+  width: 0.1rem;
+  background-color: grey;
+}
+.members-section .your-member-share-icon-container {
+  height: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+.members-section .your-member-share-icon-container > img {
+  height: 1.6rem;
+  cursor: pointer;
+}
+.members-section .your-member-share-icon-container > img:first-child {
+  display: block;
+}
+.members-section .your-member-share-icon-container > img:last-child {
+  display: none;
+}
+.members-section .your-members-social-icons {
+  visibility: hidden;
+}
+.members-section .your-members-cards > div > div {
+  transition: all 0.8s ease;
+}
+.members-section .your-members-cards > div > div:hover .your-member-share-icon-container {
+  background-color: #C0304F;
+  border: none;
+}
+.members-section .your-members-cards > div > div:hover .your-member-share-icon-container > img:first-child {
+  display: none;
+}
+.members-section .your-members-cards > div > div:hover .your-member-share-icon-container > img:last-child {
+  display: block;
+}
+.members-section .your-members-cards > div > div:hover .your-members-social-icons {
+  visibility: visible;
 }/*# sourceMappingURL=pastorteamStyle.css.map */
