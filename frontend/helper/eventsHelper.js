@@ -32,7 +32,7 @@ function ministryCardsHelper(data, container) {
 
 function eventsCardsHelper(data, container) {
     const card = document.createElement('div');
-    card.setAttribute('class', 'col-12 col-sm-6 col-lg-4');
+    !data.eventDetailsPage && card.setAttribute('class', 'col-12 col-sm-6 col-lg-4');
     card.innerHTML = `<div class="faithful-hearts events-common border rounded-3">
     <div class="position-relative">
         <img class="w-100" src=${data.imgUrl} alt=${data.altText}>
@@ -45,11 +45,11 @@ function eventsCardsHelper(data, container) {
         <div class="d-flex justify-content-between">
             <div class="d-flex justify-content-start align-items-start gap-1">
                 <img src="../images/eventsPage/events/time-circle.svg" alt="time-circle">
-                <p>${data.time}</p>
+                <p class="event-date">${data.time}</p>
             </div>
             <div class="d-flex justify-content-start align-items-start gap-1">
                 <img src="../images/eventsPage/events/location.svg" alt="location">
-                <p>${data.place}</p>
+                <p class="event-place">${data.place}</p>
             </div>
         </div>
         <h4>${data.title}</h4>

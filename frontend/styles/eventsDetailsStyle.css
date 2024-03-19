@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.all-pages-margin > div {
+  margin: 1rem 2rem;
+}
+
+@media (min-width: 992px) {
+  .all-pages-margin > div {
+    margin: 1rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .all-pages-margin > div {
+    margin: 1rem 15rem;
+  }
+}
+.navbar-section {
+  background-color: white;
+}
+
+.hero-section .hero-section-heading {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-left: 0.2rem solid #C0304F;
+  padding-left: 0.8rem;
+}
+
+.events-details-section .event-book-button {
+  color: white;
+  background-color: black;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.events-details-section .event-join-button {
+  color: white;
+  background-color: black;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.events-details-section .event-book-button {
+  max-width: 12rem;
+}
+.events-details-section .event-date, .events-details-section .event-place {
+  font-size: 0.7rem;
+}/*# sourceMappingURL=eventsDetailsStyle.css.map */
